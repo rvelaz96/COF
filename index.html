@@ -7,9 +7,9 @@
     <style>
         .circle-frame {
             position: relative;
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
+            width: 500px;
+            height: 500px;
+            border-radius: 75%;
             margin: 50px auto;
             background: url('CircleFrame.png') no-repeat center;
             background-size: cover;
@@ -17,13 +17,13 @@
         .segment {
             position: absolute;
             width: 100%;
-            height: 100%;
-            transform-origin: center;
-            clip-path: polygon(50% 50%, 100% 50%, 100% 0, 50% 0);
+            height: 50%;
+            transform-origin: 50% 50%;
+            clip-path: polygon( 50% 50%, 100% 0%, 0% 100%, 0% 0%);
             transition: background-color 0.3s;
         }
         .segment:hover {
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 1);
         }
         .s1 { transform: rotate(0deg); }
         .s2 { transform: rotate(30deg); }
@@ -35,8 +35,8 @@
         .s8 { transform: rotate(210deg); }
         .s9 { transform: rotate(240deg); }
         .s10 { transform: rotate(270deg); }
-        .s11 { transform: rotate(300deg); }
-        .s12 { transform: rotate(330deg); }
+        .s11 { transform: rotate(330deg); }
+        .s12 { transform: rotate(360deg); }
     </style>
 </head>
 <body>
@@ -54,6 +54,7 @@
     <div class="segment s10"></div>
     <div class="segment s11"></div>
     <div class="segment s12"></div>
+    <div class="segment s13"></div>
 </div>
 
 <script>
